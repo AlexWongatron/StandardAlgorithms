@@ -35,5 +35,7 @@ class Sorting {
         }
         return array
     }
-        
+    func mergeSort(numbersToSort numbers: [Int]) -> [Int] {
+        return numbers
+    }
 }
