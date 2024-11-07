@@ -25,6 +25,16 @@ final class SortingTest: XCTestCase {
     }
     
     func testInsertionWithVariousIntegerArraysReturnsArraysInAscendingOrder() {
+        //arange
+        let insertionSorting = Sorting()
+        let testCases = [(numbers: [4,1,9,7,3], expected: [1,3,4,7,9]),
+                         (numbers: [11,9,15,1,2], expected: [1,2,9,11,15])]
+        //act
         
+        //assert
+        for testCase in testCases {
+            let result = insertionSorting.insertionSort(testCase.numbers)
+            XCTAssertEqual (result, testCase.expected)
+        }
     }
 }
